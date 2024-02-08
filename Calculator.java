@@ -5,15 +5,25 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         int numA = scanner.nextInt();
         int numB = scanner.nextInt();
-        System.out.println("Addition or Subtraction?");
+        System.out.println("(A)ddition, (S)ubtraction, (M)ultiplication, or (D)ivision?");
         scanner.nextLine();
         String type = scanner.nextLine();
         switch (type) {
+            case "A":
             case "Addition":
                 System.out.println(numA + numB);
                 break;
+            case "S":
             case "Subtraction":
                 System.out.println(numA - numB);
+                break;
+            case "M":
+            case "Multiplication":
+                System.out.println(numA * numB);
+                break;
+            case "D":
+            case "Division":
+                System.out.println(numA / numB);
                 break;
             default:
                 System.out.println("INVALID");
