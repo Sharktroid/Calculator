@@ -23,7 +23,12 @@ public class Calculator {
                 break;
             case "D":
             case "Division":
+            if (numB == 0) {
+                System.out.println("Error: Divide by Zero");
+            }
+            else {
                 System.out.println(numA / numB);
+            }
                 break;
             default:
                 System.out.println("INVALID");
