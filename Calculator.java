@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numA = scanner.nextInt();
-        int numB = scanner.nextInt();
+        float numA = scanner.nextFloat();
+        float numB = scanner.nextFloat();
         System.out.println("(A)ddition, (S)ubtraction, (M)ultiplication, or (D)ivision?");
         scanner.nextLine();
         String type = scanner.nextLine();
